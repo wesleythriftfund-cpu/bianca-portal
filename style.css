@@ -268,9 +268,12 @@ h1{
 
         text-align:center;
     }
-    .smile-photo{
+}
+.smile-photo{
 
     width:100%;
+
+    height:auto;
 
     border-radius:18px;
 
@@ -278,7 +281,6 @@ h1{
 
     display:block;
 }
-
 .photo-caption{
 
     margin-top:12px;
