@@ -155,7 +155,7 @@ h1{
 
     overflow:hidden;
 
-    transition:max-height .5s ease;
+    transition:max-height .6s ease;
 
     white-space:pre-line;
 
@@ -170,7 +170,7 @@ h1{
 
     margin-top:18px;
 
-    max-height:350px;
+    max-height:1500px;
 }
 
 .footer{
@@ -198,6 +198,39 @@ h1{
     font-size:.95rem;
 }
 
+/* Dog / Smile Photo */
+
+.smile-photo{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+
+    border-radius:18px;
+
+    margin-top:15px;
+}
+
+.photo-caption{
+
+    margin-top:12px;
+
+    color:white;
+
+    text-align:center;
+}
+
+.message img{
+
+    width:100%;
+
+    height:auto;
+
+    display:block;
+}
+
 /* Icon Colours */
 
 .fa-heart{
@@ -218,6 +251,10 @@ h1{
 
 .fa-face-smile{
     color:#f9a826;
+}
+
+.fa-face-grin-hearts{
+    color:#ff9ec4;
 }
 
 .fa-cloud-rain{
@@ -268,25 +305,4 @@ h1{
 
         text-align:center;
     }
-}
-.smile-photo{
-
-    width:100%;
-
-    height:auto;
-
-    border-radius:18px;
-
-    margin-top:15px;
-
-    display:block;
-}
-.photo-caption{
-
-    margin-top:12px;
-
-    color:white;
-
-    text-align:center;
-}
 }
