@@ -5,7 +5,7 @@ function toggleCard(card)
 
 window.onload = function()
 {
-    const anniversaryDate = new Date("2026-05-16");
+    const anniversaryDate = new Date(2026, 4, 16);
 
     const today = new Date();
 
