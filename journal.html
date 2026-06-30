@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The Book of Us ❤️</title>
+
+    <link rel="stylesheet" href="journal.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Parisienne&family=Caveat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="backgroundBlur">
+
+<div class="bookWrapper">
+
+<a href="index.html" class="backButton">
+    <i class="fa-solid fa-arrow-left"></i>
+    Back Home
+</a>
+
+<div class="book">
+
+<div class="bookHeader">
+
+<p class="bookIcon">📖</p>
+
+<h1>The Book of Us</h1>
+
+<p class="subtitle">
+Every day adds another page to our story.
+</p>
+
+</div>
+
+<div class="pageNavigation">
+
+<button id="previousPage">
+
+<i class="fa-solid fa-chevron-left"></i>
+
+Previous Day
+
+</button>
+
+<div class="pageNumber">
+
+Page
+
+<span id="currentPage">
+
+1
+
+</span>
+
+</div>
+
+<button id="nextPage">
+
+Next Day
+
+<i class="fa-solid fa-chevron-right"></i>
+
+</button>
+
+</div>
+
+<div class="journalPage">
+
+<div class="pageDate">
+
+<h2 id="pageDate">
+
+30 June 2026
+
+</h2>
+
+<p id="pageDay">
+
+Tuesday
+
+</p>
+
+</div>
+
+<hr class="pageLine">
+
+<div id="journalEntries">
+
+<!-- Firebase entries will appear here -->
+
+</div>
+
+<div class="writeSection">
+
+    <h3>✍️ ✍️</h3>
+
+    <p class="writeSubtitle">
+        Leave a little piece of your heart for today.
+    </p>
+
+    <div class="paper">
+
+        <label for="author">
+            Who is writing?
+        </label>
+
+        <select id="author">
+
+            <option value="Wesley">
+                 Wesley
+            </option>
+
+            <option value="Bianca">
+                 Bianca
+            </option>
+
+        </select>
+
+        <textarea
+            id="message"
+            placeholder="Write..."
+        ></textarea>
+
+        <button id="saveEntry">
+
+            Save ❤️ 
+
+        </button>
+
+    </div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<script type="module" src="journal.js"></script>
+
+</body>
+
+</html>

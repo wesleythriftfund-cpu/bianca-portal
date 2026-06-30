@@ -1,0 +1,468 @@
+/* ==========================
+   THE BOOK OF US
+   Version 2
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Poppins,sans-serif;
+
+    background:url("background.jpg") center center/cover no-repeat fixed;
+
+    min-height:100vh;
+
+    color:#2f2f2f;
+
+}
+
+.backgroundBlur{
+
+    min-height:100vh;
+
+    background:rgba(0,0,0,.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:60px 20px;
+
+}
+
+.bookWrapper{
+
+    width:100%;
+    max-width:950px;
+
+}
+
+.backButton{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    color:white;
+
+    text-decoration:none;
+
+    margin-bottom:30px;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+.backButton:hover{
+
+    transform:translateX(-5px);
+
+}
+
+.book{
+
+    background:#efe6d5;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,.45);
+
+}
+
+.bookHeader{
+
+    text-align:center;
+
+    padding:60px 40px 40px;
+
+    background:linear-gradient(
+        to bottom,
+        #f8f2e7,
+        #efe6d5
+    );
+
+}
+
+.bookIcon{
+
+    font-size:52px;
+
+    margin-bottom:15px;
+
+}
+
+.bookHeader h1{
+
+    font-family:Parisienne;
+
+    font-size:64px;
+
+    color:#6b3d1f;
+
+    font-weight:400;
+
+}
+
+.subtitle{
+
+    margin-top:15px;
+
+    color:#7d6c5b;
+
+    font-size:16px;
+
+}
+
+.pageNavigation{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 35px;
+
+    border-top:1px solid rgba(0,0,0,.08);
+
+    border-bottom:1px solid rgba(0,0,0,.08);
+
+    background:#f5ede0;
+
+}
+
+.pageNavigation button{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    color:#6b3d1f;
+
+    transition:.25s;
+
+}
+
+.pageNavigation button:hover{
+
+    transform:scale(1.05);
+
+}
+
+.pageNumber{
+
+    font-weight:600;
+
+    color:#7d6c5b;
+
+}
+
+.journalPage{
+
+    padding:60px;
+
+}
+
+.pageDate{
+
+    text-align:center;
+
+}
+
+.pageDate h2{
+
+    font-size:34px;
+
+    color:#4f3724;
+
+    margin-bottom:8px;
+
+}
+
+.pageDate p{
+
+    color:#8f7c69;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    font-size:13px;
+
+}
+
+.pageLine{
+
+    margin:35px 0;
+
+    border:none;
+
+    border-top:1px solid rgba(0,0,0,.08);
+
+}
+
+#journalEntries{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap: 15px;
+
+    margin-bottom:20px;
+
+}
+
+.entry{
+
+    font-family:Caveat,cursive;
+
+    font-size:25px;
+
+    line-height:1.0;
+
+    color:#3f3127;
+
+    max-width:550px;
+    margin-bottom:10px;
+    animation:fadeIn .4s ease;
+
+}
+
+.entry h3{
+
+    display:none;
+
+}
+
+.entry small{
+
+    display:block;
+
+    margin-top:10px;
+
+    margin-left:30px;
+
+    font-family:Caveat,cursive;
+
+    font-size:15px;
+
+    color:#6b3d1f;
+
+    font-style:italic;
+
+}
+
+.entry p{
+
+    white-space:pre-wrap;
+
+    margin:0;
+
+}
+.writeSection{
+
+    margin-top:40px;
+
+}
+
+.writeSection h3{
+
+    text-align:center;
+
+    font-family:Parisienne;
+
+    font-size:44px;
+
+    color:#6b3d1f;
+
+    margin-bottom:10px;
+
+}
+
+.writeSubtitle{
+
+    text-align:center;
+
+    color:#000000;
+
+    margin-bottom:35px;
+
+}
+
+.paper{
+
+    background:#eee2c5;
+
+    border-radius:10px;
+
+    padding:35px;
+
+    box-shadow:
+    inset 0 0 0 1px rgba(0,0,0,.05);
+
+}
+
+.paper label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:600;
+
+}
+
+.paper select{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    border:1px solid #ddd;
+
+    margin-bottom:20px;
+
+    font-size:15px;
+
+}
+
+.paper textarea{
+
+    width:100%;
+
+    height:220px;
+
+    resize:none;
+
+    border:none;
+
+    outline:none;
+
+    font-family:Caveat,cursive;
+
+    font-size:34px;
+
+    line-height:1.8;
+
+    color:#3d2d20;
+
+    background:
+    repeating-linear-gradient(
+        transparent,
+        transparent 41px,
+        rgba(0,0,0,.08) 42px
+    );
+
+}
+
+.paper textarea::placeholder{
+
+    color:#b5a899;
+
+}
+
+.paper button{
+
+    margin-top:30px;
+
+    width:100%;
+
+    border:none;
+
+    background:#7b4d2f;
+
+    color:white;
+
+    padding:18px;
+
+    border-radius:8px;
+
+    font-size:17px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.paper button:hover{
+
+    background:#5d3922;
+
+    transform:translateY(-2px);
+
+}
+
+@media(max-width:768px){
+
+    .journalPage{
+
+        padding:35px;
+
+    }
+
+    .bookHeader h1{
+
+        font-size:46px;
+
+    }
+
+    .entry{
+
+        font-size:28px;
+
+    }
+
+    .paper textarea{
+
+        font-size:28px;
+
+        height:180px;
+
+    }
+
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(8px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
